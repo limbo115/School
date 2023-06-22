@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Новости</title>
+<link href="CSS.css" rel="stylesheet">
+<!-- Подключение библиотеки jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Подключение плагина Fancybox -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<style>
+</style>	
+</head>
+<body>
+<div class='title'><th colspan=2><h1>Класс вождения</h1></div>
+        <h3 onclick="myFunction()" class="dropbtn">Навигация</h3>
+            <ul id="myDropdown" class="dropdown-content">
+                <a href="авто школа.html" class="gradient-button">Главная</a>
+                <a href="Новости.html" class="gradient-button">Новости</a>
+                <a href="Прайс.html" class="gradient-button">Прайс</a>
+                <a href="Контакты.html" class="gradient-button">Контакты</a>
+                <a href="Оставить заявку.html" class="gradient-button">Оставить заявку</a>
+                </ul>     
+            <div class='title'><h3>Новости</h3></div>
+            
+            <div class="ttr">
+              <p class="P4">
+                    Информация специально для тех, кто без водительского удостоверения 🤗 - если вы хотите покататься с кем-то вне учебного автомобиля, на каких-то площадках которые,<br> как вы 
+                    считаете идеально предназначены для такого обучения - так вот знайте!!!<br> Сотрудники ГИБДД прекрасно знают эти места и частенько заезжают, ловят таких "катунов" и очень
+                     шикарно наказывают 😎 - <br>тот кто сел за руль - штраф от 5000 до 15000, <br>а тому кто дал порулить - штраф 30000р.<br>
+                     <a data-fancybox="01" data-src="KHtSTPhBu7k.jpg">
+                        <img src="KHtSTPhBu7k.jpg" alt="" width="30%">
+                      </a></p></div>
+
+                    
+                <div colspan=2 align="center">
+    <h3>Отзывы</h3>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a data-fancybox="01" data-src="Развивающие мультики Машины помощники. Большой сборник для детей (720p).mp4">
+            <video src="Развивающие мультики Машины помощники. Большой сборник для детей (720p).mp4" alt="">
+          </a>
+        </div>
+        <div class="gallery-item">
+            <a  data-fancybox="01" data-src="img2.jpg">
+                <img src="img2.jpg" alt="">
+              </a>
+        </div>
+        <div class="gallery-item">
+            <a  data-fancybox="01" data-src="img3.jpg">
+                <img src="img3.jpg" alt="">
+              </a>
+        </div>
+        <div class="gallery-item">
+            <a data-fancybox="01" data-src="img4.jpg">
+                <img src="img4.jpg" alt="">
+              </a>
+        </div>
+        <div class="gallery-item">
+            <a  data-fancybox="01" data-src="img5.jpg">
+                <img src="img5.jpg" alt="">
+              </a>
+        </div>
+      </div>  
+</body>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        $(".fancybox").click(function() {
+            $.fancybox({
+                'padding'       : 0,
+                'autoScale'     : false,
+                'transitionIn'  : 'none',
+                'titleShow'     : false,
+                'showCloseButton': true,
+                'titlePosition' : 'inside',
+                'transitionOut' : 'none',
+                'title'         : '',
+                'width'         : 640,
+                'height'        : 385,
+                'href'          : this.href,
+                'type'          : 'iframe',
+                'helpers'     : { 
+                                'overlay' : {'closeClick': false}
+                                }
+
+            });
+
+            return false;
+        });
+    });
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+            </script>
+<script>
+    var test = document.getElementById('testinput');
+    var test2 =document.querySelector('.qqq');
+    var but =document.getElementById('but');
+    but.addEventListener('click', function(){
+      test3 = document.getElementById('testinput');
+      if (test3.value.length > 20){
+        let div_er = document.querySelector('.error');
+        div_er.textContent = 'В обращении должно быть не более 20 символов';
+      }{test3.value=""}
+      if (test5.value.length < 1){
+        let div_errr = document.querySelector('.error');
+        div_errr.textContent = 'Введите имя';
+      }{test5.value=""}
+      if (test4.value.length < 10){
+        let div_err = document.querySelector('.error');
+        div_err.textContent = 'Номер минимум должен быть из 10 симоволов';
+      }{test4.value=""}
+    })
+    var test = document.getElementById('tw');
+    var test2 =document.querySelector('.qqq');
+    var but2 =document.getElementById('but');
+    
+    but2.addEventListener('click', function(){
+      test4 = document.getElementById('tw');
+    })
+    var test = document.getElementById('rt');
+    var test2 =document.querySelector('.trr');
+    var but3 =document.getElementById('but');
+    
+    but3.addEventListener('click', function(){
+      test5 = document.getElementById('rt'); 
+    })
+    </script>
+</html>
